@@ -18,6 +18,23 @@
 <div class="container">
   <div class="filter"></div>
   <div class="container">
+    <nav>
+      <div class="navbar-container">
+          <div class="logo">
+              <h1>AHHAAHHFHGHHGGG</h1>
+          </div>
+          <div class="hamburger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <ul class="nav-links">
+              <li><a href=".main_content">ABOUT</a></li>
+              <li><a href=".products">PRODUCT</a></li>
+              <li><a href=".contact">CONTACT</a></li>
+          </ul>
+      </div>
+  </nav>
     <div class="info_div">
         <div class="profile_info">
         <img src="killuapfp.jpg" alt="profile picture">
@@ -59,30 +76,52 @@
                           <p class="INIPRODUK">INI PRODUK</p>
                            <div>
                              <img src="AMG1.jpg">
+                             <img src="AMG2.jpg">
                            </div>
                          <div>
                          <p>INI DESKRIPSI</p>
                          </div>
                               <div>
                                 <img src="BMW10.jpg">
+                                <img src="BMW11.jpg">
                               </div>
                                  <div>
                                    <p>INI DESKRIPSI</p>
                                  </div>
                             </div>
              <div class="contact" id="center_content">
+              <div>
                <p>gweh yg bikin anjay</p>
-               <ul>
-                 <li><br><a href="https://instagram.com/fourskinnn" target="_blank">Insta</a></li>
-                 <li><br><a href="https://github.com/1Tama" target="_blank">Github</a></li>
-               </ul>
+                 <p><a href="https://instagram.com/fourskinnn" target="_blank">Insta</a></p>
+                 <p><a href="https://github.com/1Tama" target="_blank">Github</a></p>
+              </div>
              </div>
           <footer>
-            <p>yea yea image is from wirestock<a href="https://1tama.github.io">awawaw</a></p>
+            <p>yea yea image is from wirestock 
+              <a href="https://1tama.github.io">gwendengs.com</a></p>
           </footer>
     </div>
   </div>
 </div>
+
+<script>
+  // Function to handle smooth scrolling
+  document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+  // Attach event listener to hamburger menu for mobile view
+  document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+  });
+</script>
+
 </body>
 
 </html>
