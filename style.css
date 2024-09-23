@@ -386,6 +386,10 @@ footer p {
         max-height: 100%;
     }
 
+    ::-webkit-scrollbar {
+        overflow: hidden;
+    }
+
     .profile_info img {
         width: 8rem;
         height: 8rem;
